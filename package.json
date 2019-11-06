@@ -10,6 +10,7 @@
     "deploy": "npm run build && npm run export"
   },
   "dependencies": {
+    "apollo-server-micro": "^2.9.7",
     "next": "9.1.2",
     "react": "16.11.0",
     "react-dom": "16.11.0"
