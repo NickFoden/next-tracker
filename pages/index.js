@@ -15,7 +15,6 @@ const HELLO_QUERY = gql`
 
 const Home = () => {
   const { data, loading, error } = useQuery(HELLO_QUERY);
-  const [habits, setHabits] = useState(["Fullstack Next"]);
 
   if (loading) return <h4>....Loading</h4>;
 
@@ -24,8 +23,8 @@ const Home = () => {
       <div className="hero">
         <h1 className="title">Track Dev Progress</h1>
         <div className="list">
-          <HabitForm setHabits={setHabits} />
-          <HabitList habits={habits} />
+          <HabitForm />
+          <HabitList />
         </div>
       </div>
 
