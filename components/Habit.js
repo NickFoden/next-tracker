@@ -1,8 +1,8 @@
 import HabitButton from "./HabitButton";
-const Habit = () => {
+const Habit = ({ habit }) => {
   return (
     <article>
-      <h3>Title</h3>
+      <h3>{habit}</h3>
       <div>
         <HabitButton />
         <HabitButton />
