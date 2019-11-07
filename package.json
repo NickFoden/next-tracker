@@ -17,6 +17,7 @@
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-link-http": "^1.5.16",
     "apollo-server-micro": "^2.9.7",
+    "dotenv": "^8.2.0",
     "graphql-tag": "^2.10.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "9.1.2",

@@ -1,9 +1,5 @@
-import {
-  AppolloServer,
-  gql,
-  ApolloError,
-  ApolloServer
-} from "apollo-server-micro";
+import { gql, ApolloServer } from "apollo-server-micro";
+import "../../lib/mongoose";
 
 const typeDefs = gql`
   type Query {
