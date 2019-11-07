@@ -1,7 +1,9 @@
-import Layout from "../components/Layout";
-import { withApollo } from "../lib/apollo";
 import { useQuery } from "@apollo/react-hooks";
 import gql from "graphql-tag";
+
+import { withApollo } from "../lib/apollo";
+import Layout from "../components/Layout";
+import HabitList from "../components/HabitList";
 
 const HELLO_QUERY = gql`
   query HelloQuery {
@@ -18,6 +20,7 @@ const Home = () => {
     <Layout>
       <div className="hero">
         <h1 className="title">Track Dev Progress</h1>
+        <HabitList />
       </div>
 
       <style jsx>{`
