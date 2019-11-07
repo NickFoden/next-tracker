@@ -8,6 +8,21 @@ const HabitButton = ({ date }) => {
       <button onClick={() => setComplete(!complete)}>
         {complete ? "X" : "O"}{" "}
       </button>
+      <style jsx>
+        {`
+          span {
+            display: flex;
+            flex-direction: column;
+          }
+          span + span {
+            margin-left: 5px;
+          }
+          button {
+            margin-top: 1rem;
+            border: none;
+          }
+        `}
+      </style>
     </span>
   );
 };
