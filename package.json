@@ -17,8 +17,12 @@
     "apollo-cache-inmemory": "^1.6.3",
     "apollo-link-http": "^1.5.16",
     "apollo-server-micro": "^2.9.7",
+    "babel-plugin-import-graphql": "^2.7.0",
+    "dotenv": "^8.2.0",
     "graphql-tag": "^2.10.1",
+    "graphql-toolkit": "^0.6.8",
     "isomorphic-unfetch": "^3.0.0",
+    "mongoose": "^5.7.8",
     "next": "9.1.2",
     "react": "16.11.0",
     "react-dom": "16.11.0"
