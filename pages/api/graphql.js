@@ -32,8 +32,7 @@ const apolloServer = new ApolloServer({ typeDefs, resolvers });
 export const config = {
   api: {
     bodyParser: false
-  },
-  cors: false
+  }
 };
 
 const server = apolloServer.createHandler({ path: "/api/graphql" });
