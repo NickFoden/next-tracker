@@ -5,8 +5,6 @@ import { habitsResolvers } from "../../src/api/habits/resolvers";
 import { habitsMutations } from "../../src/api/habits/mutations";
 import Habits from "../../src/api/habits/Habits.graphql";
 
-const cors = require("micro-cors")();
-
 const fakeTypeDefs = gql`
   type Query {
     sayHello: String
@@ -34,8 +32,9 @@ const apolloServer = new ApolloServer({ typeDefs, resolvers });
 export const config = {
   api: {
     bodyParser: false
-  }
+  },
+  cors: false
 };
 
-const server = cors(apolloServer.createHandler({ path: "/api/graphql" }));
+const server = apolloServer.createHandler({ path: "/api/graphql" });
 export default connectDb(server);
