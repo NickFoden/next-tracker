@@ -27,7 +27,7 @@ const resolvers = mergeResolvers([
 
 const typeDefs = mergeTypeDefs([fakeTypeDefs, Habits]);
 
-const apolloServer = new ApolloServer({ typeDefs, resolvers });
+const apolloServer = new ApolloServer({ cors: true, typeDefs, resolvers });
 
 export const config = {
   api: {
