@@ -17,7 +17,6 @@ const Home = () => {
   const { data, loading, error } = useQuery(HELLO_QUERY);
 
   if (loading) return <h4>....Loading</h4>;
-
   return (
     <Layout>
       <div className="hero">
